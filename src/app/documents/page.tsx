@@ -6,7 +6,7 @@ import ValidarCPF from "../_components/ferramentas/documents/validar_cpf";
 
 export default function Page() {
   return (
-    <main className="flex justify-evenly min-h-screen gap-4 p-4 text-white">
+    <main className="flex flex-wrap justify-evenly min-h-screen gap-4 p-4 text-white">
       <GeradorCpf />
       <GeradorCNPJ />
       <ValidarCPF />
