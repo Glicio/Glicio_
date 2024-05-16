@@ -27,7 +27,7 @@ export default function SnippetCopy({ value }: { value: string }) {
           className="text-white/50"
           onClick={(e) => {
             e.preventDefault();
-            navigator.clipboard.writeText(value).then(() => {
+            void navigator.clipboard.writeText(value).then(() => {
               displayMessage("Copiado para a área de transferência");
             });
           }}

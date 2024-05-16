@@ -29,7 +29,7 @@ export default function ValidarCPF() {
             color: !!success ? "rgb(74 222 128)" : "rgb(248 113 113)",
           }}
           className="flex min-h-10 font-bold items-center justify-center whitespace-nowrap px-2 text-center text-sm text-red-400 text-white/50 transition-all">
-          {error || success}
+          {error ?? success}
         </div>
       </div>
       <button
