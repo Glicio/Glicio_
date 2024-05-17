@@ -16,7 +16,7 @@ export default function ValidarCPF() {
       </p>
       <div className="flex flex-col">
         <input
-          className=" bg-background flex items-center justify-between gap-2 rounded-md px-4 py-2"
+          className=" flex items-center justify-between gap-2 rounded-md bg-background px-4 py-2"
           value={cpf}
           placeholder="Digite o CPF"
           onChange={(e) => {
@@ -25,15 +25,16 @@ export default function ValidarCPF() {
           }}
         />
         <div
-          style={{ 
+          style={{
             color: !!success ? "rgb(74 222 128)" : "rgb(248 113 113)",
           }}
-          className="flex min-h-10 font-bold items-center justify-center whitespace-nowrap px-2 text-center text-sm text-red-400 text-white/50 transition-all">
-          {error ?? success}
+          className="flex min-h-10 items-center justify-center whitespace-nowrap px-2 text-center text-sm font-bold text-red-400 text-white/50 transition-all"
+        >
+          {error} {success}
         </div>
       </div>
       <button
-        className="bg-secondary ml-auto rounded-md px-4 py-2 font-semibold text-white "
+        className="ml-auto rounded-md bg-secondary px-4 py-2 font-semibold text-white "
         onClick={() => {
           const isValid = validarCpf(cpf);
 
