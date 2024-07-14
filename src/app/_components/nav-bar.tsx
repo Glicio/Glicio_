@@ -35,6 +35,14 @@ export default function NavBar() {
               <Document />
               <span>Gerador de CPF/CNPJ</span>
             </DropdownMenuItem>
+            <DropdownMenuItem
+              onClick={() => {
+                void router.push("/conversor");
+              }}
+            >
+              <Document />
+              <span>Conversor de bases</span>
+            </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
