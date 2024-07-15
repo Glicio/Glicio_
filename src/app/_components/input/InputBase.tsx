@@ -11,17 +11,29 @@ export default function InputBase({
   label,
   name,
   fw,
-}: {
-  value?: string;
-  onChange?: (value: string) => void;
-  placeholder?: string;
-  error?: string;
-  type?: "text" | "number" | "tel" | "password";
-  disabled?: boolean;
-  label?: string;
-  name?: string;
-  fw?: boolean;
-}) {
+}:
+  | {
+      value?: string;
+      onChange?: (value: string) => void;
+      placeholder?: string;
+      error?: string;
+      type?: "text" | "password";
+      disabled?: boolean;
+      label?: string;
+      name?: string;
+      fw?: boolean;
+    }
+  | {
+      value?: number;
+      onChange?: (value: number) => void;
+      placeholder?: string;
+      error?: string;
+      type?: "number" | "tel";
+      disabled?: boolean;
+      label?: string;
+      name?: string;
+      fw?: boolean;
+    }) {
   return (
     <div
       style={{
