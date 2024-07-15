@@ -56,7 +56,16 @@ export default function InputBase({
         }
         placeholder={placeholder}
         onChange={(e) => {
-          onChange?.(e.target.value);
+          const value = e.target.value;
+          if (type === "number" || type === "tel") {
+            onChange?.(parseInt(value));
+            return;
+          }
+          if (type === "text" || type === "password") {
+            onChange?.(e.target.value);
+            return;
+          }
+          
         }}
       />
       <div
