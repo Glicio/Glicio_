@@ -76,9 +76,9 @@ export default function Conversor() {
 
     if (toBase === 16) {
       let n = base10Number;
-      let digits: string[] = [];
+      const digits: string[] = [];
       while (n > 0) {
-        let digit = n % 16;
+        const digit = n % 16;
         switch (digit) {
           case 10:
             digits.push("A");
@@ -112,9 +112,9 @@ export default function Conversor() {
 
     if (toBase === 8) {
       let n = base10Number;
-      let digits: string[] = [];
+      const digits: string[] = [];
       while (n > 0) {
-        let digit = n % 8;
+        const digit = n % 8;
         digits.push(digit.toString())
         n = Math.floor(n / 8);
       }
@@ -124,9 +124,9 @@ export default function Conversor() {
 
     if (toBase === 10) {
       let n = base10Number;
-      let digits: string[] = [];
+      const digits: string[] = [];
       while (n > 0) {
-        let digit = n % 10;
+        const digit = n % 10;
         digits.push(digit.toString())
         n = Math.floor(n / 10);
       }
@@ -136,9 +136,9 @@ export default function Conversor() {
 
     if (toBase === 2) {
       let n = base10Number;
-      let digits: string[] = [];
+      const digits: string[] = [];
       while (n > 0) {
-        let digit = n % 2;
+        const digit = n % 2;
         digits.push(digit.toString())
         n = Math.floor(n / 2);
       }
