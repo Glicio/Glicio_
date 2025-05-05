@@ -16,12 +16,6 @@ export default async function Home() {
           >
             X3M Motion
           </a>{" "}
-          , onde atuo como desenvolvedor fullstack e líder técnico. Trabalho com
-          tecnologias como React, React Native, Next.js, Node.js, TypeScript,
-          para desenvolvimento de aplicações web e mobile, landing pages, sites
-          institucionais e e-commerces junto com a equipe da X3M Motion que
-          conta com ótimos profissionais que estão sempre em busca de novos
-          desafios.
         </p>
 
         <div className="flex flex-col gap-2 py-4">
@@ -40,12 +34,6 @@ export default async function Home() {
             Entre em contato
           </Link>
         </div>
-
-        <p className="w-full min-w-0 max-w-[90vw] text-sm text-white/30 md:max-w-[50vw]">
-          PS: Não tem mta coisa por aqui pq fiz esse site apenas pq tava cansado
-          de usar o validador de cpf e cnpj travado da 4devs, caso faça alguma
-          ferramenta legal tavez coloque aqui dps. Projetos e portfólio talvez quando tiver um tempo.
-        </p>
       </div>
     </main>
   );
